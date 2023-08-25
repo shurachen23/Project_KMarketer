@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <title>Project Kmarketer</title>
+    <link src="css/style.css" type="text/css">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            position: relative;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        header {
+            background: url(img/cover.jpg);
+            background-size: cover;
+            
+        }
+
+        .header-block:before {
+            content: '';
+            background: rgba(0, 0, 0, 0.5);
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            padding: 23px 136px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .container {
+            width: 1050px;
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .nav {
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style-type: none;
+        }
+
+        .nav li a,
+        .logo {
+            color: #fff;
+        }
+
+        .nav li a {
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            /* 171.429% */
+            letter-spacing: 0.2px;
+        }
+
+
+        .logo {
+            display: block;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+            /* 133.333% */
+            letter-spacing: 0.1px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;
+            padding: 80px 0px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0px;
+        }
+
+        .main-content h1,
+        .main-content h4 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .main-content h1 {
+            font-family: Montserrat;
+            font-size: 58px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 80px;
+            letter-spacing: 0.2px;
+            width: 573px;
+            height: 143px;
+        }
+
+        .main-content h4 {
+            font-family: Montserrat;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0.2px;
+            width: 573px;
+            height: auto;
+        }
+
+        .btn {
+            display: flex;
+            margin-left: 30px;
+        }
+
+        .search {
+
+            background: none;
+            border: none;
+            width: 40px;
+
+        }
+
+        .cart {
+
+            background: none;
+            border: none;
+            width: 40px;
+        }
+
+        .btn-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-1,
+        .btn-2 {
+            padding: 10px 36px;
+            border-radius: 37px;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+        }
+
+        .btn-1 {
+
+
+            background: #FFA62B;
+
+        }
+
+        .btn-2 {
+
+            border: 1px solid #fff;
+        }
+
+        @media (min-width:1600px) {
+            header  {
+                height: 900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header-block">
+        <div class="nav-menu">
+            <div class="container">
+                <div class="header">
+
+                    <a href="" class="logo">KMarketer</a>
+                    <div class="nav">
+                        <nav>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Product</a></li>
+                                <li><a href="">Pricing</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </nav>
+                        <div class="btn">
+                            <button type="submit" class="search"><img src="img/icn search .icn-xs.svg"></button>
+                            <button class="cart"><img src="img/icn shopping-cart .icn-xs.svg"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="container">
+                <div class="main-content">
+                    <h1>
+                        We Take Care of the Future
+                    </h1>
+                    <h4>
+                        We know how large objects will act, but things on a small scale just do not act that way.
+                    </h4>
+                    <div class="btn-info">
+                        <a href="#" class="btn-1">Get Quote Now</a>
+                        <a href="#" class="btn-2">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
