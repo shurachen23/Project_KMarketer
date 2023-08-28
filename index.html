@@ -20,12 +20,10 @@
         .header {
             background: url(img/cover.jpg);
             background-size: cover;
-            
+            background-position-x: center;
         }
-        *
-        {
-            margin: 0;
-        }
+
+        
 
         .header:before {
             content: '';
@@ -48,7 +46,7 @@
         }
 
         .container {
-           width: 1050px;
+            width: 1050px;
 
         }
 
@@ -124,7 +122,7 @@
             line-height: 80px;
             letter-spacing: 0.2px;
             max-width: 570px;
-            
+
         }
 
         .main-content h4 {
@@ -135,7 +133,7 @@
             line-height: 30px;
             letter-spacing: 0.2px;
             max-width: 570px;
-            
+
         }
 
         .btn {
@@ -189,9 +187,19 @@
             border: 1px solid #fff;
         }
 
-        @media (min-width:1600px) {
-           
+        @media (max-width: 320px) {
+            .header_block {
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .nav {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
         }
+     
     </style>
 </head>
 
