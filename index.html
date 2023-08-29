@@ -8,6 +8,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+        :root {
+            --light-text-color: #fff;
+            --dark-background-color: #252B42;
+            --text-color:#252B42;
+        }
+
         body {
             position: relative;
             font-size: 14px;
@@ -185,9 +191,69 @@
             border: 1px solid #fff;
         }
 
+        .choose_us {
+            background: var(--dark-background-color);
+            z-index: 5;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
 
+        .choose_us_container {
+            display: flex;
+            padding: 45px 0px;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        .choose_us_h2 {
+            color: var(--light-text-color);
+            font-size: 3em;
+            font-weight: 700;
+            line-height: 57px;
+            letter-spacing: 0.2px;
+            text-align: center;
+        }
 
+        .choose_us_p {
+            color: var(--light-text-color);
+            text-align: center;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+        }
+
+        .choose_us_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+        }
+
+        .choose_card_item {
+            display: flex;
+            flex-direction: column;
+            padding: 35px 40px;
+            border: 1px solid #E8E8E8;
+            background: #FFF;
+
+        }
+
+        .choose_card_item_img {
+            display: flex;
+            gap: 20px;
+        }
+.choose_us_h5
+{
+    color: var(--text-color);
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; /* 150% */
+letter-spacing: 0.1px;
+}
+        /*media queries*/
         @media screen and (min-width: 320px) and (max-width:768px) {
             .header_block {
                 align-items: center;
@@ -226,6 +292,15 @@
 
                 gap: 15px;
             }
+            .choose_us_grid {
+    grid-template-columns: auto;
+    gap: 10px;
+    padding: 10px;
+}
+.choose_us_p
+{
+    padding: 10px;
+}
         }
     </style>
 </head>
@@ -272,6 +347,84 @@
             </div>
         </div>
     </header>
+    <section class="choose_us">
+        <div class="container choose_us_container">
+            <div class="choose_us_main">
+                <h2 class="choose_us_h2">
+                    WHY CHOOSE US
+                </h2>
+                <p class="choose_us_p">
+                    Problems trying to resolve the conflict between <br>the two major realms of Classical physics: Newtonian
+                    mechanics
+                </p>
+            </div>
+            <div class="choose_us_grid">
+                <div class="choose_card_item">
+                    <div class="choose_card_item_img">
+                        <img src="img/carbon_tool-box.svg" alt="carbon icon box">
+                        <h5 class="choose_us_h5">Digital Marketing</h5>
+                    </div>
+                    <p>
+                        the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
+                    </p>
+                </div>
+                <div class="choose_card_item">
+                    <div class="choose_card_item_img">
+                        <img src="img/ant-design_shop-twotone.svg" alt="ant design shop icon">
+                        <h5 class="choose_us_h5">Digital Marketing</h5>
+                    </div>
+                    <p>
+                        the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
+                    </p>
+                </div>
+                <div class="choose_card_item">
+                    <div class="choose_card_item_img">
+                        <img src="img/carbon_notebook.svg" alt="carbon notebook icon">
+                        <h5 class="choose_us_h5">Digital Marketing</h5>
+                    </div>
+                    <p>
+                        the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
+                    </p>
+                </div>
+                <div class="choose_card_item">
+                    <div class="choose_card_item_img">
+                        <img src="img/clarity_users-line.svg" alt="clarity users line icon">
+                        <h5 class="choose_us_h5">Digital Marketing</h5>
+                    </div>
+                    <p>
+                        the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
+                    </p>
+                </div>
+                <div class="choose_card_item">
+                    <div class="choose_card_item_img">
+                        <img src="img/bx_bx-stats.svg" alt="bx stats icon">
+                        <h5 class="choose_us_h5">Digital Marketing</h5>
+                    </div>
+                    <p>
+                        the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
+                    </p>
+                </div>
+                <div class="choose_card_item">
+                    <div class="choose_card_item_img">
+                        <img src="img/fa-solid_award.svg" alt="solid award icon">
+                        <h5 class="choose_us_h5">Digital Marketing</h5>
+                    </div>
+                    <p>
+                        the quick fox jumps over the lazy dog the quick fox jumps over the lazy dog
+                    </p>
+                </div>
+
+            </div>
+    </section>
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>
